@@ -40,7 +40,7 @@ const Register = () => {
 useEffect(()=>{
   if (user) {
     setTimeout(()=>{
-      navigate('/')
+      navigate('/Jobster')
     },2000)
   }
 },[user])
