@@ -19,10 +19,7 @@ const JobsContainer = () => {
     sort,
   } = useSelector((store) => store.allJobs);
   const dispatch = useDispatch();
-console.log( search,
-  searchStatus,
-  searchType,
-  sort)
+
   useEffect(() => {
     dispatch(getAllJobs());
   }, [page, search, searchStatus, searchType, sort]);
